@@ -1,0 +1,37 @@
+<div id="sidepanel">
+
+<div id="welcome2">
+
+<% if !member_signed_in? %>
+<div style="padding-left:20px">
+
+<h5>Login with your credentials. </h5><%=link_to 'Login', new_member_session_path %><br><hr align="left" width="120px">
+<h5>Have an account first!</h5><%=link_to 'Register', new_member_registration_path %>
+</div>
+
+</div>
+
+
+</div>
+
+<div id="content">
+
+
+<div id="welcome1">
+<h2>Welcome to Project Portal.</h2>
+<hr>
+<h3><p>Now a one stop destination for checking the project allocations in the system. You can login with your company credentials and view your project allocations. You will also be able to see the projects you finished with, in the past. </p>
+
+<p>For viewing the above, make sure you have an account in the portal.</p>
+
+<p>The portals holds the functionality for allocating and creating projcts for the administrative purposes. </p>
+<h4>Do login with your credentials and view the latests of the allotments on the list <br>and checkout the details of your projects.
+
+</div>
+
+
+
+
+
+<%end%>
+</div>

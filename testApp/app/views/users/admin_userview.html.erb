@@ -1,0 +1,37 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Dob</th>
+    <th>Gender</th>
+    <th>Location</th>
+    <th>Project name</th>
+    <th>Project</th>
+    <th>Hobbies</th>
+    <th>Interest</th>
+    <th>Emp</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.DOB %></td>
+    <td><%= user.gender %></td>
+    <td><%= user.location %></td>
+    <td><%= user.project_name %></td>
+    <td><%= user.project_id %></td>
+    <td><%= user.hobbies %></td>
+    <td><%= user.interest %></td>
+    <td><%= user.emp_id %></td>
+
+    
+  </tr>
+<% end %>
+</table>
+

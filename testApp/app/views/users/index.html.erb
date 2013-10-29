@@ -1,0 +1,55 @@
+<div id="sidepanel">
+<br><br>
+<%= link_to "View Projects",projects_path %>
+<br><br><hr>
+
+<br>
+<%= link_to "View User",users_path %>
+</div>
+<div id="content">
+<h1>Listing users</h1>
+
+<table style="border:1px solid black">
+  <tr>
+    <th style="border-bottom: 1px solid black">First name</th><th></th>
+    <th style="border-bottom: 1px solid black">Last name</th><th></th>
+    <th style="border-bottom: 1px solid black">Dob</th><th></th>
+    <th style="border-bottom: 1px solid black">Gender</th><th></th>
+    <th style="border-bottom: 1px solid black">Location</th><th></th>
+    <th style="border-bottom: 1px solid black">Project name</th><th></th>
+
+ <!--   <th>Hobbies</th>
+    <th>Interest</th> -->
+    <th style="border-bottom: 1px solid black">Emp</th><th></th>
+    <th style="border-bottom: 1px solid black">Email</th><th></th>
+    <th></th><th></th>
+   
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.first_name %></td><td> </td>
+    <td><%= user.last_name %></td><td> </td>
+    <td><%= user.DOB %></td><td> </td>
+    <td><%= user.gender %></td><td> </td>
+    <td><%= user.location %></td><td> </td>
+    <td><%= user.project_name %></td><td> </td>
+    
+   <!-- <td><%= user.hobbies %></td>
+    <td><%= user.interest %></td>-->
+    <td><%= user.emp_id %></td><td> </td>
+    <td><%= user.email %></td><td> </td>
+    <td><%= link_to 'Show', user %></td><td> </td>
+   <!-- <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<!--<%= link_to 'Create New User', new_user_path %>-->
+
+<%= will_paginate @users %></p> 
+<link_to 'back' , user_path>
+</div>

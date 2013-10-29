@@ -1,0 +1,18 @@
+<div id="sidepanel">
+<br><br>
+<%= link_to "View Projects",projects_path %>
+<br><br><hr>
+
+<br>
+<%= link_to "View User",users_path %>
+</div>
+<div id="content">
+
+<h1>Editing project</h1>
+
+<%= render 'form' %>
+<br><br>
+<%= link_to 'Show', @project %> |
+<%= link_to 'Back', projects_path %>
+
+</div>

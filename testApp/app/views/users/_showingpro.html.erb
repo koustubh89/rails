@@ -1,0 +1,36 @@
+
+<% if projects.size >0 %>
+<h1></h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% projects.each do |project|   %> <%#removed @from projects%>
+  <tr>
+    <td><%= project.name %></td>
+    <td><%= project.start_date %></td>
+    <td><%= project.end_date %></td>
+    <td><%= project.location %></td>
+   <!-- <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  -->
+</tr>
+<% end %>
+
+</table>
+
+<% else %>
+<h3>You have no project assigned.</h3>
+<% end %>
+<br />
+
+<%=# link_to 'New Project', new_project_path
+ %>

@@ -1,0 +1,169 @@
+
+html
+{
+height:100%;
+width:100%;
+}
+
+body {
+
+  background-image:url("images.jpg");
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin:0px;
+  overflow: hidden;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  text-decoration:none;
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: blue;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  
+    h2 {
+    text-align: left;
+    font-weight: bold;
+    
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+#wrapper
+{
+height:750px;
+width:900px;
+background:white;
+display:block;
+margin:0px auto;
+box-shadow: 0px 0px  10px 10px black;
+
+padding: 0px;
+}
+
+
+#header
+{
+background-image:url("img16.jpg");
+height:100px;
+width:97%;
+display:block;
+margin: 0px;
+background:#4B4C4C;
+padding-left:25px;
+font-size:25px;
+color:white;
+border:1px solid black;
+}
+
+#footer
+{
+position:fixed;
+background:#4B4C4C;
+bottom:0px;
+width:900px;
+height:20px;
+left:
+}
+
+#loginfo
+{
+
+display: inline-block;
+float:right;
+height:30px;
+width:35%;
+color:white;;
+font-weight:bold;
+text-decoration:none;
+font-size:10px;
+
+}
+
+
+#sidepanel
+{
+display: inline-block;
+width:170px;
+color:black;
+border-right: 1px solid  #7D7E7E ;
+background-color:#B2B2B2;
+font-size:17px;
+height:600px;
+margin:0px;
+padding:10px 0px 0px 10px;
+}
+
+#content
+{
+display: inline-block;
+height:590px;
+
+float: right;
+width:700px;
+margin-top:-608px;
+margin-left:25px;
+
+}
+#welcome1
+{
+float:"left";
+width:"400px";
+}
+#welcome2
+{
+float:"right";
+width:"400px";
+}

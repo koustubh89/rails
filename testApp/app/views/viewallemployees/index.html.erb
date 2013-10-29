@@ -1,0 +1,9 @@
+<div id="sidepanel">
+<%#= link_to "View Projects",projects_path %>
+
+<%#= link_to "View User",users_path %>
+</div>
+<div id="content">
+
+<%= render :partial=>"view_all_emp", :locals=>{:users=>User.find(:all)} %>
+</div>

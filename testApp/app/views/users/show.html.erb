@@ -1,0 +1,85 @@
+<div id="sidepanel">
+
+<% if (current_member.email=='admin@g.com') %>
+
+<br><br>
+<%= link_to "View Projects",projects_path %>
+<br><br><hr>
+
+<br>
+<%= link_to "View User",users_path %>
+<% end %>
+
+</div>
+
+
+
+<div id="content">
+
+<% if (current_member.email!='admin@g.com') %>
+<h1>Hello <%=  @user.first_name %></h1>
+<% else %>
+<h1> <%=  @user.first_name %>'s Details</h1>
+<hr width=680px>
+<% end %>
+
+
+
+
+
+<p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @user.DOB %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @user.location %>
+</p>
+
+
+<p>
+  <b>Hobbies:</b>
+  <%= @user.hobbies %>
+</p>
+
+<p>
+  <b>Interest:</b>
+  <%= @user.interest %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email%>
+</p>
+
+<p>
+  <b>Emp:</b>
+  <%= @user.emp_id %>
+</p>
+
+
+<h1 >Current projects</h1>
+<%= render :partial=>"showingpro", :locals=>{:projects=>@user.projects} %>
+<% if (current_member.email!='admin@g.com') %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<% else %>
+<%= link_to 'Back', users_path %>
+<% end %>
+
+</div>

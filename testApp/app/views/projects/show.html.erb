@@ -1,0 +1,41 @@
+<div id="sidepanel">
+<br><br>
+<%= link_to "View Projects",projects_path %>
+<br><br><hr>
+
+<br>
+<%= link_to "View User",users_path %>
+</div>
+<div id="content">
+
+<p id="notice"><%= notice %></p>
+<h2> Project id:   <%= @project.id %></h2>
+<hr>
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @project.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @project.end_date %>
+</p>
+
+<p>
+  <b>User_id:</b>
+  <%= @project.user_id %>
+
+<br>
+<%= link_to 'View all Employees', users_path %> 
+</p>
+
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= link_to 'Assign/Edit', edit_project_path(@project) %>&nbsp&nbsp |
+&nbsp&nbsp<%= link_to 'Back', projects_path %>
+</div>
